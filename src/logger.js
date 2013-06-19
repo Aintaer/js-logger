@@ -154,9 +154,9 @@
 			return;
 		}
 
+		var console = window.console;
 		Logger.setLevel(defaultLevel || Logger.DEBUG);
 		Logger.setHandler(function(messages, context) {
-			var console = window.console;
 			var hdlr = console.log;
 
 			// Prepend the logger's name to the log message for easy identification.
