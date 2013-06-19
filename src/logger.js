@@ -115,7 +115,7 @@
 		L.error = bind(globalLogger, globalLogger.error);
 		
 		// Don't forget the convenience alias!
-		L.log = L.info;
+		L.log = L.debug;
 	}());
 
 	// Set the global logging handler.  The supplied function should expect two arguments, the first being an arguments
